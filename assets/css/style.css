@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    max-width: 100% !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#first {
+    background: url('../img/Banner\ YT\ 6.0.png') no-repeat;
+    background-size: cover;
+
+    height: 600px;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    width: 72%;
+    margin: 0 auto;
+}
+
+.column-3 {
+    width: 31%;
+    float: left;
+}
+
+.column-3-mid {
+    margin: 0 3%;
+}
+
+#logo {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+}
+
+#menu {
+    background-color: red;
+    height: 50px;
+    line-height: 50px;
+    font-size: 23px;
+    margin-top: 200px;
+}
+
+#menu-text {
+    display: none;
+    color: turquoise;
+    padding-left: 7px;
+}
+
+
+#menu a {
+    display: block;
+    text-align: center;
+    color: turquoise;
+}
+
+#menu a:hover {
+    background-color: rgba(0, 0, 0, .5);
+    color: lime;
+    text-shadow: 0 0 5px #3be, 0 0 10px rgb(9, 255, 0);
+    transition: background-color 1s, text-shadow 3s;
+}
+
+#menu,
+#box,
+h2,
+h3,
+#footer {
+    text-shadow: 0 0 5px #3be, 0 0 10px rgb(9, 255, 0);
+}
+
+#box {
+    color: white;
+    background-color: red;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+#box a {
+    width: 225px;
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    margin-left: 35%;
+}
+
+#box a:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#second {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2,
+h3 {
+    font-size: 35px;
+    padding: 30px 0px 30px 0px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#second img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.every_image {
+    position: relative;
+}
+
+#third {
+    background-color: black;
+}
+
+#third textarea {
+    resize: none;
+    padding: 3px;
+}
+
+#third input {
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+    margin: 10px;
+    padding: 10px 15px 20px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    height: 45px;
+}
+
+input[type="submit"]:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact {
+    color: white;
+}
+
+.column2 {
+    float: left;
+    width: 47%;
+    margin: 0 1.5%;
+}
+
+#nav-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #box {
+        font-size: 25px;
+    }
+
+    #first {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #first {
+        background-attachment: fixed;
+    }
+
+    #menu {
+        position: relative;
+    }
+
+    .column-3,
+    .column2 {
+        width: 98%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    #box {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    #first {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #second img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #second p {
+        font-size: 15px;
+    }
+
+    #second .column-3 {
+        margin: 10px auto;
+    }
+
+    #menu .content {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #menu-text {
+        display: block;
+    }
+
+    .menu-open {
+        max-height: 100% !important;
+    }
+
+    #menu {
+        height: auto;
+        font-size: 15px;
+    }
+
+    #menu a {
+        border-bottom: 1px solid white;
+    }
+}
